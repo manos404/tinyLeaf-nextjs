@@ -54,7 +54,7 @@ export default function Modal({ showModal, setShowModal, formData }) {
       <div style={styles.modal}>
         <h3>Reservation Confirmation</h3>
         <p>
-          Your reservation is on {formData.date} at {formData.time} o'clock.
+          Your reservation is on {formData.date} at {formData.time} o&#39;clock.
         </p>
         <Link href="/">
           <button

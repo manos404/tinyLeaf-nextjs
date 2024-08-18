@@ -55,16 +55,16 @@ function ImageCarousel() {
       <div className={classes["slider-container"]}>
         <Slider {...settings}>
           <div className={classes["slider-container"]}>
-            <Image src={image1} />
+            <Image src={image1} alt=""/>
           </div>
           <div className={classes["slider-container"]}>
-            <Image src={image2} />
+            <Image src={image2} alt=""/>
           </div>
           <div className={classes["slider-container"]}>
-            <Image src={image3} />
+            <Image src={image3} alt=""/>
           </div>
           <div className={classes["slider-container"]}>
-            <Image src={image4} />
+            <Image src={image4} alt=""/>
           </div>
         </Slider>
       </div>

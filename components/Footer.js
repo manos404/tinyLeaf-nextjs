@@ -11,10 +11,10 @@ export default function Footer() {
       <footer className={classes["footer"]}>
         <div className={classes["footer--logo"]}>
           <div className={classes["footer-image"]}>
-            <Image src={logo} />
+            <Image src={logo} alt="" />
           </div>
           <div>
-            <Image src={logoText} />
+            <Image src={logoText} alt="" />
           </div>
         </div>
         <div className={classes["footer-content"]}>

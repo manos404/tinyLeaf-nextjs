@@ -22,8 +22,8 @@ export default function Navbar() {
     <header className=  {classes.header} >
       <nav className={`${classes.navbar} ${classes.nav}`}>
         <div className={classes.logo}>
-          <Image src={logo} />
-          <Image src={logoText} />
+          <Image src={logo} alt=""/>
+          <Image src={logoText} alt=""/>
         </div>
         <div
           // className={`menu ${menuOpen ? "open" : ""}`}
