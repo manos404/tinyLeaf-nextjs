@@ -6,6 +6,7 @@ import logoText from "../images/Tiny Leaf Tea House.png";
 import classes from "@/components/Navbar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
   // const location = useLocation();
@@ -21,8 +22,8 @@ export default function Navbar() {
     <header className=  {classes.header} >
       <nav className={`${classes.navbar} ${classes.nav}`}>
         <div className={classes.logo}>
-          <img src={logo.src} />
-          <img src={logoText.src} />
+          <Image src={logo} />
+          <Image src={logoText} />
         </div>
         <div
           // className={`menu ${menuOpen ? "open" : ""}`}

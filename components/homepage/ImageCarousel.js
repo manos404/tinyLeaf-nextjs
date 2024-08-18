@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import classes from "./ImageCarousel.module.css";
+import Image from "next/image";
 
 function ImageCarousel() {
   var settings = {
@@ -54,16 +55,16 @@ function ImageCarousel() {
       <div className={classes["slider-container"]}>
         <Slider {...settings}>
           <div className={classes["slider-container"]}>
-            <img src={image1.src} />
+            <Image src={image1} />
           </div>
           <div className={classes["slider-container"]}>
-            <img src={image2.src} />
+            <Image src={image2} />
           </div>
           <div className={classes["slider-container"]}>
-            <img src={image3.src} />
+            <Image src={image3} />
           </div>
           <div className={classes["slider-container"]}>
-            <img src={image4.src} />
+            <Image src={image4} />
           </div>
         </Slider>
       </div>

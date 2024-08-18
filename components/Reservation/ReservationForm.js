@@ -21,6 +21,7 @@ import { formatRevalidate } from "next/dist/server/lib/revalidate";
 import FormSubmit from "./form-submit";
 import checkAvailability from "@/lib/checkAvailability";
 import Modal from "./Modal";
+import Image from "next/image";
 
 export default function ReservationForm({ slots }) {
   const today = new Date();
@@ -197,7 +198,7 @@ export default function ReservationForm({ slots }) {
         className={`${classes["form-icon-1"]}`}
         classes={{ width: "80px", marginBottom: "20px" }}
       >
-        <img src={smallIcon.src} ref={smallIconRef} />
+        <Image src={smallIcon} ref={smallIconRef} />
       </div>
       <div className={`${classes["form-wrapper-2"]}`}>
         <h3>Book a table</h3>
@@ -403,7 +404,7 @@ export default function ReservationForm({ slots }) {
         </form>
       </div>
       <div className={`${classes["form-icon-2"]}`} classes={{ width: "250px" }}>
-        <img src={bigIcon.src} ref={bigIconRef} />
+        <Image src={bigIcon} ref={bigIconRef} />
       </div>
       {showModal && (
         <Modal

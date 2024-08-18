@@ -5,6 +5,7 @@ import teaLeaves from "@/images/teaLeaves.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animateOurBlends } from "@/lib/animations";
+import Image from "next/image";
 4;
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -35,7 +36,7 @@ export default function OurBlends({ headline }) {
         </div>
       </div>
       <div className={classes["our-blends-image"]} ref={ourBlendsImageRef}>
-        <img src={teaLeaves.src} alt="" />
+        <Image src={teaLeaves} alt="" />
       </div>
     </section>
   );

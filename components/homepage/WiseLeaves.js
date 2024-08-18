@@ -5,6 +5,7 @@ import teacups from "@/images/teacups.png";
 import teaPage from "@/images/teaPage.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -55,7 +56,7 @@ export default function WiseLeaves() {
     >
       <div className={classes["background-color"]}></div>
       <div className={classes["wise-leaves-teacups"]}>
-        <img src={teacups.src} alt="" ref={imageRef1} />
+        <Image src={teacups} alt="" ref={imageRef1} />
       </div>
       <div className={classes["text-body"]}>
         <h3>Wise Leaf evenings</h3>
@@ -66,7 +67,7 @@ export default function WiseLeaves() {
         </p>
       </div>
       <div className={classes["wise-leaves-image"]}>
-        <img src={teaPage.src} alt="" ref={imageRef2} />
+        <Image src={teaPage} alt="" ref={imageRef2} />
       </div>
     </section>
   );

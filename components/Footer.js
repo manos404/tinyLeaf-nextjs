@@ -3,6 +3,7 @@ import React from "react";
 import classes from "./Footer.module.css";
 import logo from "../images/Ellipse 4.png";
 import logoText from "../images/Tiny Leaf Tea House.png";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,10 +11,10 @@ export default function Footer() {
       <footer className={classes["footer"]}>
         <div className={classes["footer--logo"]}>
           <div className={classes["footer-image"]}>
-            <img src={logo.src} />
+            <Image src={logo} />
           </div>
           <div>
-            <img src={logoText.src} />
+            <Image src={logoText} />
           </div>
         </div>
         <div className={classes["footer-content"]}>
