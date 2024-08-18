@@ -1,0 +1,123 @@
+.header {
+  background-color: var(--colour-sage);
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+}
+.navbar {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+  padding: 15px;
+  gap: 20px;
+  left: 10px;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 15px;
+  /* transform: rotate(); */
+  /* border: 2px solid black; */
+}
+
+.menu .span {
+  height: 2px;
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 10px;
+  transition: transform 0.2s ease; /* Προσθήκη μετάβασης στο transform */
+}
+/* .menu span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.menu span:nth-child(2) {
+  transform: rotate(-45deg);
+  position: relative;  
+}  */
+
+@media (max-width: 768px) {
+  /*  */
+
+  .menu {
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .navbar .ul {
+    gap: 20px;
+    display: none;
+    /* margin-top: 50px;   */
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .navbar .ul.open {
+    display: flex;
+    position: sticky;
+    height: auto;
+    /* padding-bottom: 30px; */
+  }
+
+  .navbar .ul .li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu.open {
+    top: 30px;
+  }
+
+  .menu.open .span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+
+  .menu.open .span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+}
+.nav .ul .li.selected {
+  text-decoration: underline;
+  color: aliceblue;
+  /* Άλλα στυλ που επιθυμείτε για τον υπογραμμισμό */
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: var(--header-height-tablet);
+  }
+  .navbar .ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.navbar {
+  padding-inline: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar {
+    padding-inline: 70px;
+  }
+}

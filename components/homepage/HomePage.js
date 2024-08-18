@@ -1,12 +1,12 @@
-"use client";
 import React from "react";
-import Hero from "@/components/Hero";
+
+import Hero from "../components/Hero";
+import OurBlends from "../components/OurBlends";
+import WiseLeaves from "../components/WiseLeaves";
+import Reservation from "../components/Reservation";
 import heroImage from "../images/teapot.png";
-import OurBlends from "@/components/homepage/OurBlends";
-import WiseLeaves from "@/components/homepage/WiseLeaves";
-import ReservationHero from "@/components/ReservationHero";
-import ReservationImage from "@/images/ImagebyTinaDawson.png";
-import ImageCarousel from "@/components/homepage/ImageCarousel";
+import ReservationImage from "../images/ImagebyTinaDawson.png";
+import ImageCarousel from "../components/ImageCarousel";
 
 function Homepage() {
   return (
@@ -14,7 +14,7 @@ function Homepage() {
       <Hero headline="A flavour for all seasons" image={heroImage} />
       <OurBlends />
       <WiseLeaves />
-      <ReservationHero
+      <Reservation
         image={ReservationImage}
         title={"Make a reservation"}
         text={

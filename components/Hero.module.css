@@ -1,0 +1,19 @@
+.hero {
+  /* background-image: url(../images/teapot.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;     
+  color: var(--colour-white);
+  position: relative;
+}
+
+.heroText {
+  color: white;
+  justify-content: center;
+}
