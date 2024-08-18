@@ -1,13 +1,12 @@
- 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import Link from 'next/link';
-import { Chela_One } from "next/font/google";
+import Link from "next/link";
+ 
 
 export default function Modal({ showModal, setShowModal, formData }) {
   // Έλεγχος για την ορθή απόδοση μόνο στον client-side
   const [mounted, setMounted] = useState(false);
-  
+
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
@@ -60,7 +59,9 @@ export default function Modal({ showModal, setShowModal, formData }) {
         <Link href="/">
           <button
             style={styles.closeButton}
-            onClick={()=>{setShowModal(false)}}
+            onClick={() => {
+              setShowModal(false);
+            }}
           >
             Close
           </button>
