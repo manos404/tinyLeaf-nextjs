@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <section style={{bottom:'0' }}>
+    <section style={{bottom:"0" }}>
       <footer className={classes["footer"]}>
         <div className={classes["footer--logo"]}>
           <div className={classes["footer-image"]}>

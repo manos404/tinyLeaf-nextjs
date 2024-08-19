@@ -406,13 +406,13 @@ export default function ReservationForm({ slots }) {
       <div className={`${classes["form-icon-2"]}`} classes={{ width: "250px" }}>
         <Image src={bigIcon} ref={bigIconRef}alt="" />
       </div>
-      {showModal && (
+      {/* {showModal && (
         <Modal
           showModal={true}
           setShowModal={setShowModal}
           formData={formData}
         />
-      )}
+      )} */}
     </section>
   );
 }
