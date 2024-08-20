@@ -22,7 +22,7 @@
 }
 .our-blends-image {
   /* background-color: aquamarine; */
-  width: 100%;
+  width: 100%; 
   order: 2;
 }
 .text--feature {
@@ -38,9 +38,7 @@
   margin-inline: 0;
   opacity: 1;
 }
-.our-blends-image {
-  width: 100%;
-}
+ 
 
 @media screen and (min-width: 750px) {
   .our-blends {

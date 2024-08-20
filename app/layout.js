@@ -1,6 +1,6 @@
 import { Cormorant } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 const cormorant = Cormorant({ subsets: ["latin"], weight: ["500", "700"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={cormorant.className}>
-        <Navbar />
+        <Header />
         {children}
         <Footer />
       </body>

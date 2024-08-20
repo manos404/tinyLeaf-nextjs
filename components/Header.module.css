@@ -10,8 +10,9 @@
 .navbar {
   width: 100%;
   justify-content: space-between;
+  padding-inline: 20px;
 }
-
+ 
 .logo {
   display: flex;
   align-items: center;
@@ -111,9 +112,6 @@
     align-items: center;
     gap: 2rem;
   }
-}
-.navbar {
-  padding-inline: 50px;
 }
 
 @media screen and (min-width: 1000px) {

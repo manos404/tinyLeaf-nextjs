@@ -198,7 +198,7 @@ export default function ReservationForm({ slots }) {
         className={`${classes["form-icon-1"]}`}
         classes={{ width: "80px", marginBottom: "20px" }}
       >
-        <Image src={smallIcon} ref={smallIconRef} alt=""/>
+        <Image src={smallIcon} ref={smallIconRef} alt="" />
       </div>
       <div className={`${classes["form-wrapper-2"]}`}>
         <h3>Book a table</h3>
@@ -404,15 +404,15 @@ export default function ReservationForm({ slots }) {
         </form>
       </div>
       <div className={`${classes["form-icon-2"]}`} classes={{ width: "250px" }}>
-        <Image src={bigIcon} ref={bigIconRef}alt="" />
+        <Image src={bigIcon} ref={bigIconRef} alt="" />
       </div>
-      {/* {showModal && (
+      {showModal && (
         <Modal
           showModal={true}
           setShowModal={setShowModal}
           formData={formData}
         />
-      )} */}
+      )}
     </section>
   );
 }

@@ -1,12 +1,22 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
- 
 
 export default function Modal({ showModal, setShowModal, formData }) {
   // Έλεγχος για την ορθή απόδοση μόνο στον client-side
   const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showModal]);
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
@@ -30,12 +40,13 @@ export default function Modal({ showModal, setShowModal, formData }) {
     modal: {
       backgroundColor: "var(--colour-sage)",
       color: "white",
-      padding: "20px",
+      padding: "35px",
       borderRadius: "8px",
-      maxWidth: "500px",
+      maxWidth: "600px",
       width: "100%",
       boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
       position: "relative", // Για να τοποθετηθεί σωστά το closeButton
+      textAlign: "center",
     },
     closeButton: {
       position: "absolute",

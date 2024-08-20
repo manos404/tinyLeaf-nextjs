@@ -36,7 +36,7 @@ export default function OurBlends({ headline }) {
         </div>
       </div>
       <div className={classes["our-blends-image"]} ref={ourBlendsImageRef}>
-        <Image src={teaLeaves} alt="" />
+        <Image src={teaLeaves} alt=""   />
       </div>
     </section>
   );
