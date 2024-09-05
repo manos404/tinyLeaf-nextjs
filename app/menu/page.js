@@ -4,13 +4,13 @@ import heroImage from "@/images/ImagebyDrewJemmett.png";
 import image from "@/images/ImagebyHeatherBarnes.png";
 import ReservationHero from "@/components/ReservationHero";
 import Menu from "@/components/MenuPage/Menu";
-import { fetchMenuData, fetchSpecialMenuData } from "@/lib/menuItems";
+import {getMenuItems, getSpecialMenuItems } from "@/lib/menuItems";
 
  
 
 async function  MenuItems() {
-  const menuItems = await fetchMenuData();
-  const menuSpecialItems =await fetchSpecialMenuData();
+  const menuItems = await getMenuItems();
+  const menuSpecialItems =await getSpecialMenuItems();
   return <Menu menu={menuItems} specialMenu={menuSpecialItems} />;
 }
 
